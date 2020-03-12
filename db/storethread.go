@@ -71,6 +71,8 @@ func (a *singleThreadAdapter) Start() {
 	}
 	if ownLog := li.GetOwnLog(); ownLog != nil {
 		a.ownLogID = ownLog.ID
+	} else {
+		panic("Sorry!, you can't move own if you don't have a Log in the thread.")
 	}
 
 	var wg sync.WaitGroup
