@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - jsign/failing-folder-tests2
   pull_request:
     branches:
       - master
