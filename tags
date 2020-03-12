@@ -1,0 +1,99 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+APP_BASE_NAME	api/pb/android/gradlew.bat	/^set APP_BASE_NAME=%~n0$/;"	v
+APP_HOME	api/pb/android/gradlew.bat	/^set APP_HOME=%DIRNAME%$/;"	v
+CLASSPATH	api/pb/android/gradlew.bat	/^set CLASSPATH=%APP_HOME%\\gradle\\wrapper\\gradle-wrapper.jar$/;"	v
+CMD_LINE_ARGS	api/pb/android/gradlew.bat	/^set CMD_LINE_ARGS=$/;"	v
+CMD_LINE_ARGS	api/pb/android/gradlew.bat	/^set CMD_LINE_ARGS=%*$/;"	v
+Client	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^    public Client(String host, int port) {$/;"	m	class:Client
+Client	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^public class Client implements LifecycleObserver {$/;"	c
+ClientException	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^    public ClientException(String message)$/;"	m	class:ClientException
+ClientException	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^class ClientException extends Exception$/;"	c
+ClientState	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^    enum ClientState {$/;"	g	class:Client
+ClientTest	api/pb/android/threads/src/androidTest/java/io/textile/threads/ClientTest.java	/^public class ClientTest {$/;"	c
+ClientUnitTest	api/pb/android/threads/src/test/java/io/textile/threads/ClientUnitTest.java	/^public class ClientUnitTest {$/;"	c
+Connect	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^    public void Connect() {$/;"	m	class:Client
+Connected	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^        Connected, Idle$/;"	e	enum:Client.ClientState	file:
+DEFAULT_JVM_OPTS	api/pb/android/gradlew.bat	/^set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"$/;"	v
+DIRNAME	api/pb/android/gradlew.bat	/^if "%DIRNAME%" == "" set DIRNAME=.$/;"	v
+DIRNAME	api/pb/android/gradlew.bat	/^set DIRNAME=%~dp0$/;"	v
+GO	api/pb/Makefile	/^GO = $(PB:.proto=.pb.go)$/;"	m
+GO	service/api/pb/Makefile	/^GO = $(PB:.proto=.pb.go)$/;"	m
+GO	service/pb/Makefile	/^GO = $(PB:.proto=.pb.go)$/;"	m
+GetDBLinkSync	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^    public GetDBLinkReply GetDBLinkSync (String dbID) {$/;"	m	class:Client
+ID	api/pb/android/threads/src/test/java/io/textile/threads/ClientUnitTest.java	/^    public String ID;$/;"	f	class:Person
+Idle	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^        Connected, Idle$/;"	e	enum:Client.ClientState	file:
+JAVA_EXE	api/pb/android/gradlew.bat	/^set JAVA_EXE=%JAVA_HOME%\/bin\/java.exe$/;"	v
+JAVA_EXE	api/pb/android/gradlew.bat	/^set JAVA_EXE=java.exe$/;"	v
+JAVA_HOME	api/pb/android/gradlew.bat	/^set JAVA_HOME=%JAVA_HOME:"=%$/;"	v
+MainActivity	api/pb/android/app/src/main/java/io/textile/textileexample/MainActivity.java	/^public class MainActivity extends AppCompatActivity {$/;"	c
+ModelCreateSync	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^    public ModelCreateReply ModelCreateSync (String dbID, String modelName, String[] values) {$/;"	m	class:Client
+ModelFindByIDSync	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^    public ModelFindByIDReply ModelFindByIDSync (String dbID, String modelName, String entityID) {$/;"	m	class:Client
+ModelFindSync	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^    public ModelFindReply ModelFindSync (String dbID, String modelName, ByteString query) {$/;"	m	class:Client
+ModelHasSync	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^    public boolean ModelHasSync (String dbID, String modelName, String[] entityIDs) {$/;"	m	class:Client
+ModelSaveSync	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^    public ModelSaveReply ModelSaveSync (String dbID, String modelName, String[] values) {$/;"	m	class:Client
+NewDB	api/pb/android/threads/src/androidTest/java/io/textile/threads/ClientTest.java	/^    public void NewDB() throws Exception {$/;"	m	class:ClientTest
+NewDBSync	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^    public String NewDBSync () {$/;"	m	class:Client
+PB	api/pb/Makefile	/^PB = $(wildcard *.proto)$/;"	m
+PB	service/api/pb/Makefile	/^PB = $(wildcard *.proto)$/;"	m
+PB	service/pb/Makefile	/^PB = $(wildcard *.proto)$/;"	m
+PROTOC_GEN_DART_PATH	api/pb/Makefile	/^PROTOC_GEN_DART_PATH = "${HOME}\/.pub-cache\/bin\/protoc-gen-dart"$/;"	m
+PROTOC_GEN_TS_PATH	api/pb/Makefile	/^PROTOC_GEN_TS_PATH = ".\/javascript\/node_modules\/.bin\/protoc-gen-ts"$/;"	m
+PROTOC_GEN_TS_PATH	service/api/pb/Makefile	/^PROTOC_GEN_TS_PATH = ".\/javascript\/node_modules\/.bin\/protoc-gen-ts"$/;"	m
+Person	api/pb/android/threads/src/test/java/io/textile/threads/ClientUnitTest.java	/^    Person(String ID, int age) {$/;"	m	class:Person
+Person	api/pb/android/threads/src/test/java/io/textile/threads/ClientUnitTest.java	/^class Person {$/;"	c
+RegisterSchemaSync	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^    public void RegisterSchemaSync (String dbID, String name, String schema) {$/;"	m	class:Client
+StartFromAddressSync	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^    public void StartFromAddressSync (String dbID, String address, ByteString followKey, ByteString readKey) {$/;"	m	class:Client
+StartSync	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^    public void StartSync (String dbID) {$/;"	m	class:Client
+_SKIP	api/pb/android/gradlew.bat	/^set _SKIP=2$/;"	v
+age	api/pb/android/threads/src/test/java/io/textile/threads/ClientUnitTest.java	/^    public int age;$/;"	f	class:Person
+asyncStub	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^    private static APIGrpc.APIStub asyncStub;$/;"	f	class:Client	file:
+blockingStub	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^    private static APIGrpc.APIBlockingStub blockingStub;$/;"	f	class:Client	file:
+channel	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^    private static ManagedChannel channel;$/;"	f	class:Client	file:
+client	api/pb/android/app/src/main/java/io/textile/textileexample/MainActivity.java	/^    Client client;$/;"	f	class:MainActivity
+client	api/pb/android/threads/src/androidTest/java/io/textile/threads/ClientTest.java	/^    static Client client;$/;"	f	class:ClientTest
+client	api/pb/android/threads/src/test/java/io/textile/threads/ClientUnitTest.java	/^    static Client client;$/;"	f	class:ClientUnitTest
+connect	api/pb/android/threads/src/androidTest/java/io/textile/threads/ClientTest.java	/^    void connect() {$/;"	m	class:ClientTest
+connect	api/pb/android/threads/src/test/java/io/textile/threads/ClientUnitTest.java	/^    void connect() throws Exception {$/;"	m	class:ClientUnitTest
+connected	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^    public Boolean connected() {$/;"	m	class:Client
+createPerson	api/pb/android/threads/src/test/java/io/textile/threads/ClientUnitTest.java	/^    private String createPerson(String ID, int age) throws Exception {$/;"	m	class:ClientUnitTest	file:
+dbId	api/pb/android/threads/src/test/java/io/textile/threads/ClientUnitTest.java	/^    static String dbId;$/;"	f	class:ClientUnitTest
+die	api/pb/android/gradlew	/^die () {$/;"	f
+end	api/pb/android/gradlew.bat	/^:end$/;"	l
+execute	api/pb/android/gradlew.bat	/^:execute$/;"	l
+fail	api/pb/android/gradlew.bat	/^:fail$/;"	l
+findJavaFromJavaHome	api/pb/android/gradlew.bat	/^:findJavaFromJavaHome$/;"	l
+firstName	api/pb/android/threads/src/test/java/io/textile/threads/ClientUnitTest.java	/^    public String firstName = "adam";$/;"	f	class:Person
+getStoredSchema	api/pb/android/threads/src/test/java/io/textile/threads/ClientUnitTest.java	/^    private String getStoredSchema() throws Exception {$/;"	m	class:ClientUnitTest	file:
+grpcHost	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^    private static String grpcHost;$/;"	f	class:Client	file:
+grpcPort	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^    private static int grpcPort;$/;"	f	class:Client	file:
+init	api/pb/android/gradlew.bat	/^:init$/;"	l
+initIPFS	api/pb/android/app/src/main/java/io/textile/textileexample/MainActivity.java	/^    private void initIPFS() {$/;"	m	class:MainActivity	file:
+io.textile.textileexample	api/pb/android/app/src/main/java/io/textile/textileexample/MainActivity.java	/^package io.textile.textileexample;$/;"	p
+io.textile.threads	api/pb/android/threads/src/androidTest/java/io/textile/threads/ClientTest.java	/^package io.textile.threads;$/;"	p
+io.textile.threads	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^package io.textile.threads;$/;"	p
+io.textile.threads	api/pb/android/threads/src/test/java/io/textile/threads/ClientUnitTest.java	/^package io.textile.threads;$/;"	p
+lastName	api/pb/android/threads/src/test/java/io/textile/threads/ClientUnitTest.java	/^    public String lastName = "doe";$/;"	f	class:Person
+logger	api/pb/android/threads/src/androidTest/java/io/textile/threads/ClientTest.java	/^    private final static Logger logger =$/;"	f	class:ClientTest	file:
+mainEnd	api/pb/android/gradlew.bat	/^:mainEnd$/;"	l
+modelId	api/pb/android/threads/src/test/java/io/textile/threads/ClientUnitTest.java	/^    static String modelId = "";$/;"	f	class:ClientUnitTest
+omega	api/pb/android/gradlew.bat	/^:omega$/;"	l
+onButtonClick	api/pb/android/app/src/main/java/io/textile/textileexample/MainActivity.java	/^    public void onButtonClick(View v) {$/;"	m	class:MainActivity
+onCreate	api/pb/android/app/src/main/java/io/textile/textileexample/MainActivity.java	/^    protected void onCreate(Bundle savedInstanceState) {$/;"	m	class:MainActivity
+save	api/pb/android/gradlew	/^save () {$/;"	f
+startTest	api/pb/android/threads/src/androidTest/java/io/textile/threads/ClientTest.java	/^    public void startTest() throws Exception {$/;"	m	class:ClientTest
+state	api/pb/android/threads/src/main/java/io/textile/threads/Client.java	/^    public static ClientState state = ClientState.Idle;$/;"	f	class:Client
+t01_StartTest	api/pb/android/threads/src/test/java/io/textile/threads/ClientUnitTest.java	/^    public void t01_StartTest() throws Exception {$/;"	m	class:ClientUnitTest
+t02_NewDB	api/pb/android/threads/src/test/java/io/textile/threads/ClientUnitTest.java	/^    public void t02_NewDB() throws Exception {$/;"	m	class:ClientUnitTest
+t03_StartDB	api/pb/android/threads/src/test/java/io/textile/threads/ClientUnitTest.java	/^    public void t03_StartDB() throws Exception {$/;"	m	class:ClientUnitTest
+t04_GetDBLink	api/pb/android/threads/src/test/java/io/textile/threads/ClientUnitTest.java	/^    public void t04_GetDBLink() throws Exception {$/;"	m	class:ClientUnitTest
+t05_RegisterSchema	api/pb/android/threads/src/test/java/io/textile/threads/ClientUnitTest.java	/^    public void t05_RegisterSchema() throws Exception {$/;"	m	class:ClientUnitTest
+t06_ModelCreate	api/pb/android/threads/src/test/java/io/textile/threads/ClientUnitTest.java	/^    public void t06_ModelCreate() throws Exception {$/;"	m	class:ClientUnitTest
+t06_ModelSave	api/pb/android/threads/src/test/java/io/textile/threads/ClientUnitTest.java	/^    public void t06_ModelSave() throws Exception {$/;"	m	class:ClientUnitTest
+warn	api/pb/android/gradlew	/^warn () {$/;"	f
+win9xME_args	api/pb/android/gradlew.bat	/^:win9xME_args$/;"	l
+win9xME_args_slurp	api/pb/android/gradlew.bat	/^:win9xME_args_slurp$/;"	l
