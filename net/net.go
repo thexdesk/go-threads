@@ -314,9 +314,12 @@ func (t *net) pullThreadUnsafe(ctx context.Context, id thread.ID) error {
 	// Gather offsets for each log
 	offsets := make(map[peer.ID]cid.Cid)
 	for _, lg := range info.Logs {
-		has, err := t.bstore.Has(lg.Head)
-		if err != nil {
-			return err
+		var has bool
+		if lg.Head.Defined() {
+			has, err = t.bstore.Has(lg.Head)
+			if err != nil {
+				return err
+			}
 		}
 		if has {
 			offsets[lg.ID] = lg.Head
@@ -406,10 +409,9 @@ func (t *net) GetThreadAddresses(ctx context.Context, creds thread.Credentials) 
 	if err != nil {
 		return nil, err
 	}
-	host := t.Host()
-	peerID, _ := ma.NewComponent("p2p", host.ID().String())
+	peerID, _ := ma.NewComponent("p2p", t.host.ID().String())
 	threadID, _ := ma.NewComponent("thread", tinfo.ID.String())
-	addrs := host.Addrs()
+	addrs := t.host.Addrs()
 	res := make([]ma.Multiaddr, len(addrs))
 	for i := range addrs {
 		res[i] = addrs[i].Encapsulate(peerID).Encapsulate(threadID)
@@ -541,7 +543,7 @@ func (t *net) AddRecord(ctx context.Context, creds thread.Credentials, lid peer.
 		return err
 	}
 	if logpk == nil {
-		return fmt.Errorf("log not found")
+		return lstore.ErrLogNotFound
 	}
 
 	knownRecord, err := t.bstore.Has(rec.Cid())
@@ -677,8 +679,7 @@ func (t *net) putRecord(ctx context.Context, id thread.ID, lid peer.ID, rec core
 	if len(unknownRecords) == 0 {
 		return nil
 	}
-	// Get or create a log for the new rec
-	lg, err := t.getLog(id, lid)
+	lg, err := t.store.GetLog(id, lid)
 	if err != nil {
 		return err
 	}
@@ -769,9 +770,6 @@ func (t *net) getLocalRecords(ctx context.Context, id thread.ID, lid peer.ID, of
 	if err != nil {
 		return nil, err
 	}
-	if lg.PubKey == nil {
-		return nil, fmt.Errorf("log not found")
-	}
 	sk, err := t.store.ServiceKey(id)
 	if err != nil {
 		return nil, err
@@ -858,18 +856,6 @@ func (t *net) startPulling() {
 			return
 		}
 	}
-}
-
-// getLog returns the log with the given thread and log id.
-func (t *net) getLog(id thread.ID, lid peer.ID) (info thread.LogInfo, err error) {
-	info, err = t.store.GetLog(id, lid)
-	if err != nil {
-		return
-	}
-	if info.PubKey != nil {
-		return
-	}
-	return info, fmt.Errorf("log %s doesn't exist for thread %s", lid, id)
 }
 
 // getOwnLoad returns the log owned by the host under the given thread.
